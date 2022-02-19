@@ -31,6 +31,7 @@ function Author() {
 	const onCopy = async () => {
 		await navigator.clipboard.writeText(authorDesc);
 		alert('TextCopied')
+		setOpen(false)
 	}
 	return (
 		<div className="Author" style={{ width: '25%', marginLeft: 'auto', marginRight: 'auto', backgroundColor: 'gray' }}>
